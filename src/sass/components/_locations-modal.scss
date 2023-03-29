@@ -1,0 +1,141 @@
+.location-modal {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 365px;
+  background: var(--backdrop-bgc);
+  z-index: 1000;
+  transition: opacity var(--animation), visibility var(--animation);
+
+  background-color: var(--main-text-color);
+
+  border: 2px solid var(--yellow-default);
+  border-radius: 10px;
+
+  @media screen and (min-width: 480px) {
+    width: 568px;
+    height: 458px;
+  }
+}
+
+.location-modal.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.location-close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+
+  border: none;
+  background-color: var(--main-text-color);
+  fill: currentColor;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--yellow-default-color);
+  }
+}
+
+.location-close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+}
+
+.location__title {
+  color: var(--black-text-color);
+
+  font-family: var(--font-seymour-one);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin-top: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.location__map {
+  margin-top: 20px;
+
+  width: 100%;
+  height: 224px;
+
+  @media screen and (min-width: 480px) {
+    width: 448px;
+    height: 260px;
+  }
+}
+
+.open-map-btn {
+  margin-top: 32px;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  transition: var(--animation);
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 34px;
+
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--black-text-color);
+  background-color: var(--yellow-default);
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--green-accent-color);
+  }
+
+  &:focus {
+    background-color: var(--green-accent-color);
+    color: var(--main-text-color);
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+  }
+}

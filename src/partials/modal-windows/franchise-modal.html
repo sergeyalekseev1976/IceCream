@@ -1,0 +1,75 @@
+<div class="backdrop is-hidden" modal>
+  <div class="franchise-modal container">
+    <button type="button" class="franchise-close-btn" modal-close>
+      <svg class="franchise-close-icon" width="16" height="16">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="franchise__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <p class="franchise__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="franchise__form">
+      <div class="franchise-container">
+        <div class="input-container">
+          <label class="modal-label">
+            <input
+              class="modal-input"
+              type="text"
+              name="user_name"
+              placeholder="Name"
+              required
+              pattern="[a-z]{1,15}"
+            />
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label class="modal-label">
+            <input
+              class="modal-input"
+              type="tel"
+              name="user_phone"
+              placeholder="Phone"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx"
+            />
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label class="modal-label">
+            <input
+              class="modal-input"
+              type="email"
+              name="mail"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="input-container">
+          <label class="modal-label">
+            <textarea
+              class="modal-input comment"
+              name="comment"
+              rows="5"
+              cols="23"
+              placeholder="Comment"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            ></textarea>
+          </label>
+        </div>
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

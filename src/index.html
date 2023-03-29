@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+
+    <link
+      type="image/x-icon"
+      href="./images/favicon/favicon-main.ico"
+      rel="shortcut icon"
+    />
+    <link
+      type="Image/x-icon"
+      href="./images/favicon/favicon-main.ico"
+      rel="icon"
+    />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <section class="section" id="home">
+      <!-- ❗️❗️❗️ СЕРГІЙ + РУСЛАН -->
+      <include src="./partials/header-hero.html"></include>
+
+      <!-- ❗️❗️❗️ РУСЛАН BUY-NOW-MODAL -->
+      <include src="./partials/modal-windows/buy-now-modal.html"></include>
+    </section>
+
+    <main>
+      <section id="our">
+        <!-- ❗️❗️❗️ АНАТОЛІЙ -->
+        <include src="./partials/products.html"></include>
+
+        <!-- ❗️❗️❗️ ВІКТОР BUY-NOW-MODAL -->
+        <include src="./partials/modal-windows/products-modal.html"></include>
+      </section>
+
+      <section class="about" id="how">
+        <!-- ❗️❗️❗️ САША + АНЯ -->
+        <include src="./partials/about.html"></include>
+
+        <!-- ❗️❗️❗️ АНЯ HOW-MADE-MODAL -->
+        <include src="./partials/modal-windows/how-made-modal.html"></include>
+      </section>
+
+      <!-- ❗️❗️❗️ ЛЕНА -->
+      <include src="./partials/advantages.html"></include>
+      <div class="background-bottom">
+        <div class="background-top"></div>
+        <!-- ❗️❗️❗️ АРТЕМ -->
+        <include src="./partials/gallery.html"></include>
+        <!-- ❗️❗️❗️ Артем -->
+        <include src="./partials/customer-reviews.html"></include>
+      </div>
+
+      <section>
+        <!-- ❗️❗️❗️ Юля -->
+        <include src="./partials/contacts.html"></include>
+
+        <!-- ❗️❗️❗️ АНДРІЙ LOCATIONS-MODAL -->
+        <include src="./partials/modal-windows/locations-modal.html"></include>
+
+        <!-- ❗️❗️❗️ АНДРІЙ FRANCHISE-MODAL -->
+        <include src="./partials/modal-windows/franchise-modal.html"></include>
+      </section>
+    </main>
+
+    <!-- ❗️❗️❗️ ПЕТЯ -->
+    <include src="./partials/footer.html"></include>
+    <!-- ❗️❗️❗️ Артем -->
+    <include src="./partials/button-up.html"></include>
+  </body>
+</html>

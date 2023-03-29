@@ -1,0 +1,229 @@
+// .container {
+//   position: relative;
+//   min-width: 320px;
+//   max-width: 480px;
+//   padding: 0 20px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// .about__backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   z-index: 100;
+//   background: #fcfcfc;
+//   border: 2px solid #f8d24e;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   border-radius: 10px;
+// }
+
+// .about__modal-window-button {
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 16px;
+//   height: 16px;
+//   border: none;
+//   padding: 0;
+//   background-color: transparent;
+// }
+
+// .about__modal-window {
+//   padding: 28px;
+// }
+
+// .about__title {
+//   margin-bottom: 20px;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   text-align: center;
+// }
+
+// .about__video {
+//   position: relative;
+//   padding-bottom: 56.25%;
+//   height: 0;
+//   min-width: 280px;
+// }
+
+// .about__movie {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .about__describe {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.4;
+//   margin-top: 20px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 768px;
+//     padding: 0 20px;
+//   }
+
+//   .about__modal-window {
+//     padding: 32px 60px;
+//   }
+
+//   .about__modal-window-button {
+//     top: 20px;
+//     right: 20px;
+//     width: 20px;
+//     height: 20px;
+//   }
+
+//   .about__title {
+//     font-weight: 400px;
+//     font-size: 16px;
+//     line-height: 1.38;
+//   }
+
+//   .about__describe {
+//     font-size: 16px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     max-width: 1200px;
+//     padding: 0 16px;
+//   }
+
+//   .about__modal-window {
+//     padding: 32px 60px;
+//   }
+// }
+
+.close-modal-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 16px;
+  height: 16px;
+
+  background: transparent;
+  padding: 0;
+  color: var(--black-text-color);
+  fill: currentColor;
+  border: none;
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--yellow-default);
+  }
+}
+
+.modal-close-icon {
+  width: 8px;
+  height: 8px;
+}
+
+@media screen and(max-width:767px) {
+  .modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    padding: 28px;
+
+    background: var(--white-color);
+    border: 2px solid var(--yellow-default);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px var(--backdrop-bgc);
+    border-radius: 10px;
+
+    transition: transform var(--animation);
+  }
+  .modal-video_title {
+    font-family: var(--font-seymour-one);
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    color: var(--black-text-color);
+    margin-bottom: 20px;
+  }
+
+  .modal-video_link {
+    min-width: 224px;
+    min-height: 199px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .modal-video_description {
+    font-family: var(--font-montserrat);
+
+    font-size: 14px;
+    line-height: 1.42857;
+
+    color: var(--black-text-color);
+  }
+}
+
+@media screen and(min-width:768px) {
+  .close-modal-btn {
+    width: 20px;
+    height: 20px;
+  }
+  .modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    padding: 32px 60px;
+    width: 568px;
+
+    background: var(--white-color);
+    border: 2px solid var(--yellow-default);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px var(--backdrop-bgc);
+    border-radius: 10px;
+
+    transition: transform var(--animation);
+  }
+  .modal-video_title {
+    font-family: var(--font-seymour-one);
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+
+    color: var(--black-text-color);
+    margin-bottom: 32px;
+  }
+
+  .modal-video_link {
+    min-width: 448px;
+    min-height: 205px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+  }
+
+  .modal-video_description {
+    font-family: var(--font-montserrat);
+
+    font-size: 16px;
+    line-height: 1.375;
+
+    color: var(--black-text-color);
+  }
+}

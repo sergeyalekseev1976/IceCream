@@ -1,0 +1,202 @@
+.btn {
+  font-family: var(--font-montserrat);
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_products {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+    background-color: transparent;
+    color: var(--black-color);
+
+    transition: color var(--animation), border-color var(--animation);
+
+    // width: 62px;
+    // height: 24px;
+    padding: 8px 12px;
+
+    border: 2px solid var(--yellow-default-color);
+    border-radius: 8px;
+
+    &:hover {
+      border-color: var(--green-accent-color);
+    }
+    &:focus {
+      border-color: var(--green-accent-color);
+      color: var(--main-text-color);
+      outline: none;
+    }
+
+    &:disabled {
+      border-color: var(--grey-disabled-color);
+    }
+    @media screen and (min-width: 1200px) {
+      // width: 134px;
+      // height: 42px;
+      padding: 12px 24px;
+      font-size: 14px;
+      line-height: calc(18 / 14);
+      border-radius: 10px;
+    }
+  }
+
+  &_read {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    width: 164px;
+    height: 42px;
+
+    border-radius: 10px;
+    border-width: 0;
+    background-color: var(--yellow-default-color);
+    color: var(--black-color);
+
+    transition: color var(--animation), background-color var(--animation);
+
+    &:hover {
+      background-color: var(--green-accent-color);
+    }
+    &:focus {
+      background-color: var(--green-accent-color);
+      color: var(--main-text-color);
+    }
+
+    &:disabled {
+      background-color: var(--grey-disabled-color);
+    }
+  }
+
+  &_how-made {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: calc(10 / 8);
+
+    background-color: transparent;
+    color: var(--yellow-default-color);
+
+    transition: color var(--animation);
+
+    // width: 83px;
+    // height: 24px;
+    padding: 8px 12px;
+
+    border: none;
+
+    &:hover {
+      color: var(--green-accent-color);
+    }
+    &:focus {
+      color: var(--main-text-color);
+    }
+
+    &:disabled {
+      color: var(--grey-disabled-color);
+    }
+    @media screen and (min-width: 1200px) {
+      // width: 154px;
+      // height: 40px;
+      padding: 12px 22px;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
+
+  &_location {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    width: 196px;
+    height: 42px;
+
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--yellow-default-color);
+    color: var(--black-color);
+
+    transition: color var(--animation), background-color var(--animation);
+
+    &:hover {
+      background-color: var(--green-accent-color);
+    }
+    &:focus {
+      background-color: var(--green-accent-color);
+      color: var(--main-text-color);
+    }
+    &:disabled {
+      background-color: var(--grey-disabled-color);
+    }
+  }
+
+  &_franchise {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    background-color: transparent;
+    color: var(--black-color);
+
+    transition: color var(--animation), border-color var(--animation);
+
+    width: 196px;
+    height: 42px;
+
+    border: 2px solid var(--yellow-default-color);
+    border-radius: 10px;
+
+    &:hover {
+      border-color: var(--green-accent-color);
+    }
+    &:focus {
+      border-color: var(--green-accent-color);
+      color: var(--main-text-color);
+    }
+    &:disabled {
+      border-color: var(--grey-disabled-color);
+    }
+  }
+
+  &_buy {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    // width: 196px;
+    // height: 42px;
+    padding: 12px 34px;
+
+    border-radius: 10px;
+    border-width: 0;
+    background-color: var(--yellow-default-color);
+    color: var(--black-color);
+
+    fill: currentColor;
+
+    transition: color var(--animation), fill var(--animation),
+      background-color var(--animation);
+
+    &:hover {
+      background-color: var(--green-accent-color);
+    }
+    &:focus {
+      background-color: var(--green-accent-color);
+      color: var(--main-text-color);
+    }
+
+    &:disabled {
+      background-color: var(--grey-disabled-color);
+    }
+  }
+}
+
+.btn-svg {
+  fill: currentColor;
+  transition: fill var(--animation);
+}
+
+.btn-span {
+  margin-right: 6px;
+}
